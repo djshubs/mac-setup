@@ -1,5 +1,2 @@
-ffmpeg
-imagemagick
-wget
-telnet
-tldr
+docker
+colima
