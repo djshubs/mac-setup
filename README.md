@@ -11,6 +11,9 @@ This repo contains info on all the apps / tools / settings I use on my Mac.
   - [Desktop](#desktop)
   - [Finder](#finder)
   - [Dock](#dock)
+  - [Other Mac Setup Tips](#other-mac-setup-tips)
+- [Oh My Zsh](#oh-my-zsh)
+  - [Installation](#installation)
 - [Homebrew](#homebrew)
   - [Homebrew](#homebrew-1)
 - [Quick Launching](#quick-launching)
@@ -50,6 +53,9 @@ These are my preferred settings for `Desktop`, `Finder` and the `Dock`.
 I don't like the new Desktop, Stage Manager or Widget features in Sequoia, so I disable them.
 
 - System Preferences
+  - Control Center
+    - Login Options -> Show in Control Center
+    - Set up Password, Apple ID, Picture, etc.
   - Desktop & Dock
     - Desktop & Stage Manager
       - Show Items
@@ -88,6 +94,22 @@ I don't use the Dock at all. It takes up screen space, and I can use RayCast to 
     - Automatically hide and show the Dock -> Yes
     - Animate opening applications -> No
     - Show suggested and recent apps in the Dock -> Yes
+
+### Other Mac Setup Tips
+
+https://sourabhbajaj.com/mac-setup/SystemPreferences/
+
+## Oh My Zsh
+
+### Installation
+
+[Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) allows us to manage our terminal shell experience.
+
+To install it, open up the built in `Terminal` app and run this command:
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
 ## Homebrew
 
