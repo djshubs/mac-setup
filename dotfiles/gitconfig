@@ -1,0 +1,25 @@
+[user]
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINvyjKEarKGcBNVjxyh4MCsxlTt7gvomXLBkwBNC19vS
+	name = Shubs
+	email = shubs@sqprojekt.com
+
+[init]
+    defaultBranch = main
+
+[gpg]
+	  format = ssh
+
+[gpg "ssh"]
+	  program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+
+[commit]
+	  gpgsign = true
+
+[core]
+  	excludesfile = ~/.gitignore
+	editor = code --wait
+
+[github]
+	user = djshubs
+[color]
+	ui = auto
