@@ -26,14 +26,13 @@ symlink() {
     file=$1
     link=$2
     if [ ! -e "$link" ]; then
-        echo "-----> Symlinking your new $link"
+        echo "-----> Symlinking your new $link from $file"
         ln -s $file $link
     fi
 }
 
 # Specify the path to your dotfiles directory
-DOTFILES_DIR="$PWD/dotfiles"
-
+DOTFILES_DIR="dotfiles"
 
 if [ -d "$DOTFILES_DIR" ]; then
     # For all files `$name` in the present folder except `*.zsh`,
@@ -42,7 +41,7 @@ if [ -d "$DOTFILES_DIR" ]; then
         if [ ! -d "$name" ]; then
             target="$HOME/.$name"
             backup $target
-            symlink $PWD/$name $target
+            symlink $PWD/$DOTFILES_DIR/$name $target
         fi
     done
 else
