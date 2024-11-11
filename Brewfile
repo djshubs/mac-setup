@@ -21,6 +21,7 @@ cask 'daisydisk'
 cask 'pearcleaner'
 
 # Development Tools
+brew 'fnm'
 brew 'colima'
 brew 'docker'
 brew 'docker-completion'
