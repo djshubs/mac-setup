@@ -49,7 +49,7 @@ else
 fi
 
 # Set macOS preferences - we will run this last because this will reload the shell
-# source ./macos
+source ./$DOTFILES_DIR/macos
 
 # Refresh the current terminal with the newly installed configuration
 exec zsh
